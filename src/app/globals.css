@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #17181d;
+  --ink-soft: #2a2b33;
+  --paper: #f6f2e9;
+  --paper-dim: #ede6d6;
+  --paper-card: #fffdf8;
+  --amber: #f5b400;
+  --amber-deep: #b87f00;
+  --pass: #2f6f4e;
+  --pass-bg: #e4ede6;
+  --fail: #b14a29;
+  --fail-bg: #f3e4db;
+  --line: #ded5c0;
+  --line-ink: rgba(246, 242, 233, 0.14);
+  --ink-70: rgba(23, 24, 29, 0.7);
+  --ink-55: rgba(23, 24, 29, 0.55);
+  --paper-70: rgba(246, 242, 233, 0.72);
+  --paper-50: rgba(246, 242, 233, 0.52);
+  --radius-s: 10px;
+  --radius-m: 16px;
+  --radius-l: 26px;
+  --shadow-card: 0 1px 0 rgba(23, 24, 29, 0.04), 0 12px 24px -16px rgba(23, 24, 29, 0.18);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-paper-card: var(--paper-card);
+  --color-amber: var(--amber);
+  --color-amber-deep: var(--amber-deep);
+  --color-pass: var(--pass);
+  --color-pass-bg: var(--pass-bg);
+  --color-fail: var(--fail);
+  --color-fail-bg: var(--fail-bg);
+  --color-line: var(--line);
+  --radius-s: var(--radius-s);
+  --radius-m: var(--radius-m);
+  --radius-l: var(--radius-l);
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Segoe UI Mono", Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
