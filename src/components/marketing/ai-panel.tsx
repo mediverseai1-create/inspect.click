@@ -15,11 +15,11 @@ export function AiPanel() {
         <div className="grid grid-cols-[0.85fr_1.15fr] max-lg:grid-cols-1 gap-13 items-center">
           <Reveal>
             <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70">
-              AI Inspection Assistant
+              Built AI-native
             </div>
-            <h2 className="text-[clamp(26px,3.2vw,36px)] mt-4.5">Ask it what matters, get a straight answer.</h2>
+            <h2 className="text-[clamp(26px,3.2vw,36px)] mt-4.5">Not a chatbot bolted onto a spreadsheet.</h2>
             <p className="mt-4 text-base text-ink-70">
-              Managers ask questions in plain language from inside the dashboard. The Assistant reads across your organization&apos;s inspections, findings, and history to answer.
+              The AI Inspection Assistant is built into the system of record itself. Ask it directly from the dashboard, in plain language, and it answers from your organization&apos;s actual inspections, findings, and history.
             </p>
             <div className="flex flex-col gap-3 mt-7">
               {questions.map((q) => (

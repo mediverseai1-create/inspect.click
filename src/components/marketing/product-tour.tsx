@@ -89,9 +89,9 @@ export function ProductTour() {
     <section id="product" className="py-24 max-md:py-16">
       <div className="max-w-[1180px] mx-auto px-8 max-md:px-5">
         <Reveal className="max-w-[640px] mb-14">
-          <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70">One workflow, nine parts</div>
-          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">Everything an inspection needs, in one place.</h2>
-          <p className="mt-4 text-[17px] text-ink-70">From building the checklist to verifying the fix — each part of InspectFlow hands off cleanly to the next.</p>
+          <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70">The platform</div>
+          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">One platform, the entire inspection lifecycle.</h2>
+          <p className="mt-4 text-[17px] text-ink-70">Nine parts, one system of record — from building the checklist to verifying the fix, with nothing handed off to a spreadsheet in between.</p>
         </Reveal>
         <Reveal>
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-px bg-line border border-line rounded-3xl overflow-hidden">

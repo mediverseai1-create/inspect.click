@@ -13,15 +13,15 @@ export function Hero() {
       <div className="grid grid-cols-[1.05fr_0.95fr] gap-14 items-center max-w-[1180px] mx-auto px-8 max-lg:grid-cols-1 max-lg:gap-13 max-md:px-5">
         <div>
           <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70 mb-5.5">
-            AI inspection &amp; corrective action
+            AI-native inspection platform
           </div>
           <h1 className="text-[clamp(38px,5.6vw,60px)] leading-[1.04] font-medium">
-            Inspections that end in
+            The system of record for
             <br />
-            <span className="bg-amber px-2.5 pb-1 box-decoration-clone">a resolved issue, not a forgotten photo</span>
+            <span className="bg-amber px-2.5 pb-1 box-decoration-clone">inspections that actually get fixed</span>
           </h1>
           <p className="mt-6.5 max-w-[490px] text-lg leading-relaxed text-ink-70">
-            Every failed check becomes a tracked issue — evidenced, assigned, and verified before it&apos;s closed. Nothing waits in a spreadsheet again.
+            InspectFlow runs your inspection program end to end — schedule the check, capture the finding, assign the fix, verify it closed. One system of record, built AI-native from the ground up.
           </p>
           <div className="flex items-center gap-6.5 mt-8.5 flex-wrap">
             <ButtonLink href="/sign-up" variant="amber">
@@ -44,7 +44,7 @@ export function Hero() {
         </div>
 
         <div className="bg-paper-card border border-line rounded-3xl shadow-[0_1px_0_rgba(23,24,29,0.04),0_12px_24px_-16px_rgba(23,24,29,0.18)] p-9 max-md:p-7">
-          <div className="mono text-[11.5px] text-ink-55 mb-6">HOW A FINDING MOVES</div>
+          <div className="mono text-[11.5px] text-ink-55 mb-6">THE CLOSED LOOP</div>
           <div className="flex flex-col gap-0">
             {steps.map((s, idx) => (
               <div key={s.label} className="flex items-center gap-4">

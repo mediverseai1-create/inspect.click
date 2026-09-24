@@ -39,11 +39,11 @@ export function Spotlight() {
             <div className="grid grid-cols-[0.95fr_1.05fr] max-lg:grid-cols-1 gap-13 items-center">
               <div>
                 <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-paper/70">
-                  Overview dashboard
+                  Command center
                 </div>
-                <h2 className="text-paper text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">The state of every site, on one screen.</h2>
+                <h2 className="text-paper text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">Every site. Every finding. One screen of record.</h2>
                 <p className="text-paper/70 mt-4 text-[17px]">
-                  Upcoming and missed inspections, open and overdue corrective actions, and the locations with recurring problems — updated as your teams work.
+                  InspectFlow gives operations leaders a single, authoritative view of the whole inspection program — status, exposure, and what needs attention now, updated as your teams work in the field.
                 </p>
               </div>
               <div className="flex flex-col gap-3">

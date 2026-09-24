@@ -20,11 +20,11 @@ export function Problem() {
       <div className="max-w-[1180px] mx-auto px-8 max-md:px-5">
         <Reveal className="max-w-[640px] mb-14">
           <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70">
-            The gap InspectFlow closes
+            Why operations teams switch
           </div>
-          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">The paper trail usually stops at the photo.</h2>
+          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">Most inspection data dies the moment the photo is taken.</h2>
           <p className="mt-4 text-[17px] text-ink-70">
-            A failed item gets flagged, a picture gets taken, and then it sits in a folder. InspectFlow keeps every finding moving until it&apos;s actually fixed.
+            A checklist app can capture a failed item. It can&apos;t own it. InspectFlow is built to run the full loop — from the failed check to the verified fix — as one system of record.
           </p>
         </Reveal>
         <Reveal>
