@@ -2,8 +2,16 @@ import { Reveal } from "./reveal";
 
 const faqs = [
   {
-    q: "Does the AI decide whether something is safe?",
-    a: "No. The AI classifies findings, suggests severity, and recommends corrective actions — but every inspection result and every resolution is confirmed by an authorized person on your team.",
+    q: "How does InspectFlow use AI?",
+    a: "AI analyzes your organization's inspection data to help classify findings, identify recurring problems, summarize inspection activity, and answer questions about your inspection history. Every response is grounded in your organization's actual data — it never invents inspection history or statistics.",
+  },
+  {
+    q: "Does the AI make safety decisions for us?",
+    a: "No. The AI can classify findings, suggest severity, and recommend corrective actions, but authorized people remain responsible for confirming inspection results and resolution. AI recommendations are recommendations, not autonomous safety decisions.",
+  },
+  {
+    q: "Is the AI trained on our inspection data?",
+    a: "No model is trained on your organization's data. The Assistant reads your current inspection records directly, in real time, to generate each answer — your data is never used to train shared models.",
   },
   {
     q: "Do inspectors need to install an app?",

@@ -32,7 +32,7 @@ export function LoopDiagram() {
               ))}
             </div>
             <p className="mt-6.5 text-center text-sm text-ink-55">
-              Every closed issue feeds the next inspection cycle — recurring problems surface automatically instead of repeating quietly.
+              Every closed issue feeds InspectFlow&apos;s AI — recurring problems surface automatically instead of repeating quietly.
             </p>
           </div>
         </Reveal>

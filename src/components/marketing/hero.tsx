@@ -1,9 +1,10 @@
 import { ButtonLink } from "@/components/ui/button";
 
 const steps = [
-  { label: "Item fails", tone: "border-fail text-fail" },
+  { label: "Inspect", tone: "border-fail text-fail" },
+  { label: "AI analyzes", tone: "border-amber-deep text-amber-deep" },
   { label: "Issue created", tone: "border-ink text-ink" },
-  { label: "Assigned & fixed", tone: "border-ink text-ink" },
+  { label: "Corrective action", tone: "border-ink text-ink" },
   { label: "Verified & closed", tone: "border-pass text-pass" },
 ];
 
@@ -13,15 +14,15 @@ export function Hero() {
       <div className="grid grid-cols-[1.05fr_0.95fr] gap-14 items-center max-w-[1180px] mx-auto px-8 max-lg:grid-cols-1 max-lg:gap-13 max-md:px-5">
         <div>
           <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70 mb-5.5">
-            AI-native inspection platform
+            AI-native inspection intelligence
           </div>
           <h1 className="text-[clamp(38px,5.6vw,60px)] leading-[1.04] font-medium">
-            The system of record for
+            AI-native inspection intelligence
             <br />
-            <span className="bg-amber px-2.5 pb-1 box-decoration-clone">inspections that actually get fixed</span>
+            <span className="bg-amber px-2.5 pb-1 box-decoration-clone">for teams that need problems fixed</span>
           </h1>
-          <p className="mt-6.5 max-w-[490px] text-lg leading-relaxed text-ink-70">
-            InspectFlow runs your inspection program end to end — schedule the check, capture the finding, assign the fix, verify it closed. One system of record, built AI-native from the ground up.
+          <p className="mt-6.5 max-w-[520px] text-lg leading-relaxed text-ink-70">
+            InspectFlow runs your inspection program end to end — while AI analyzes findings, identifies recurring problems, and helps your team focus on what needs attention. One system of record, AI-native from the ground up.
           </p>
           <div className="flex items-center gap-6.5 mt-8.5 flex-wrap">
             <ButtonLink href="/sign-up" variant="amber">
@@ -50,14 +51,14 @@ export function Hero() {
               <div key={s.label} className="flex items-center gap-4">
                 <div className="flex flex-col items-center">
                   <span className={`w-3 h-3 rounded-full border-2 flex-none ${s.tone}`} style={{ background: idx === steps.length - 1 ? "currentColor" : "transparent" }} />
-                  {idx < steps.length - 1 && <span className="w-px h-11 bg-line" />}
+                  {idx < steps.length - 1 && <span className="w-px h-9 bg-line" />}
                 </div>
-                <span className={`text-[15px] font-medium pb-9 ${idx === steps.length - 1 ? "pb-0" : ""} ${s.tone.split(" ")[1]}`}>{s.label}</span>
+                <span className={`text-[15px] font-medium pb-7 ${idx === steps.length - 1 ? "pb-0" : ""} ${s.tone.split(" ")[1]}`}>{s.label}</span>
               </div>
             ))}
           </div>
           <p className="mt-6 pt-5 border-t border-line text-[13.5px] text-ink-55">
-            No step can be skipped — a fix needs submitted evidence before InspectFlow lets it close.
+            Every completed inspection adds to your history — AI learns from it to help catch the next recurring problem sooner.
           </p>
         </div>
       </div>

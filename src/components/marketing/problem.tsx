@@ -1,17 +1,17 @@
 import { Reveal } from "./reveal";
 
 const before = [
-  "Findings live in loose photos and paper checklists",
-  "No one owns a failed item once it's written down",
-  "Recurring problems go unnoticed across sites",
-  '"Fixed" means someone said so, not proved it',
+  "Findings live in photos, paper, and spreadsheets",
+  "Teams manually search for recurring problems",
+  "Historical patterns are difficult to identify",
+  'Managers interpret the inspection data themselves',
 ];
 
 const after = [
-  "Every finding is one record — evidence, location, history",
-  "Failed items are assigned automatically, with a deadline",
-  "The AI Assistant flags what keeps failing, and where",
-  "A fix needs submitted evidence before it can be closed",
+  "Every finding becomes structured, searchable data",
+  "AI identifies recurring failures across locations",
+  "AI surfaces the patterns and findings that need attention",
+  "A fix requires submitted evidence before it can close",
 ];
 
 export function Problem() {
@@ -22,9 +22,9 @@ export function Problem() {
           <div className="mono inline-flex items-center gap-2.5 text-[12.5px] pl-3 border-l-[3px] border-amber text-ink-70">
             Why operations teams switch
           </div>
-          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">Most inspection data dies the moment the photo is taken.</h2>
+          <h2 className="text-[clamp(28px,3.6vw,40px)] leading-[1.12] mt-4.5">Most inspection data tells you what happened. Very little tells you what to do next.</h2>
           <p className="mt-4 text-[17px] text-ink-70">
-            A checklist app can capture a failed item. It can&apos;t own it. InspectFlow is built to run the full loop — from the failed check to the verified fix — as one system of record.
+            Photos, checklists, and paperwork capture a failed item — but the information stays fragmented. InspectFlow structures that data as one system of record, so AI can analyze it across inspections, locations, and time.
           </p>
         </Reveal>
         <Reveal>
